@@ -1,22 +1,17 @@
 <script lang="ts" setup>
-import { defineProps, defineEmits, withDefaults } from "vue";
-import { useVModel } from "@vueuse/core";
-
-interface InputProps {
-  id?: string;
-  name?: string;
-  value?: string;
-}
+import { defineEmits, defineProps, withDefaults } from "vue"
+import { useVModel } from "@vueuse/core"
+import type { InputProps } from "~/components/Input/types"
 
 const props = withDefaults(defineProps<InputProps>(), {
   id: undefined,
   name: undefined,
   value: "",
-});
+})
 
-const emit = defineEmits(["update:value", "focus", "blur"]);
+const emit = defineEmits(["update:value", "focus", "blur"])
 
-const newValue = useVModel(props, "value", emit);
+const newValue = useVModel(props, "value", emit)
 </script>
 
 <template>
@@ -26,7 +21,7 @@ const newValue = useVModel(props, "value", emit);
       :value="newValue"
       type="text"
       :name="props.name"
-      class="input focus:ring-indigo-500 focus:border-indigo-500 block w-full px-4 sm:text-sm border-gray-300 rounded-md"
+      class="input focus:ring-indigo-500 focus:border-indigo-500 block w-full px-4 sm:text-sm border-gray-300 rounded-md h-8 color-black"
       placeholder="Start Searching..."
       autocomplete="off"
       @input="$emit('update:value', $event.target.value)"

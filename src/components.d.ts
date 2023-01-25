@@ -7,11 +7,15 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Container: typeof import('./components/Container/Container.vue')['default']
     Header: typeof import('./components/Header/Header.vue')['default']
+    Heading: typeof import('./components/Heading/Heading.vue')['default']
     Input: typeof import('./components/Input/Input.vue')['default']
-    MovieCard: typeof import('./components/MovieCard/MovieCard.vue')['default']
-    README: typeof import('./components/README.md')['default']
+    Rating: typeof import('./components/Rating/Rating.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    ShowCard: typeof import('./components/ShowCard/ShowCard.vue')['default']
+    ShowSlider: typeof import('./components/ShowSlider/ShowSlider.vue')['default']
+    Tag: typeof import('./components/Tag/Tag.vue')['default']
   }
 }

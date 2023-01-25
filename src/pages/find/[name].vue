@@ -1,28 +1,40 @@
 <script setup lang="ts">
-const props = defineProps<{ name: string }>()
-const router = useRouter()
+import { useFindShow } from "~/services/tv-maze"
+
+const route = useRoute()
+const routeName = $computed(() => route.params.name)
+const name = $computed(() =>
+  Array.isArray(route.params.name) ? route.params.name[0] : route.params.name
+)
+const { result, search } = useFindShow(name, { immediate: true })
+
+const showsFound = $computed(() => result.value.length)
+
+watch(
+  () => name,
+  (newName) => {
+    search(newName)
+  }
+)
 </script>
 
 <template>
-  <div>
-    <div class="text-4xl">
-      <div class="i-carbon-pedestrian inline-block" />
-    </div>
-    <p class="text-4xl">
-      WELCOME BACK {{ props.name }}
+  <div class="container">
+    <p class="flex align-center text-4xl mb-2">
+      <span>Searching: {{ name }}</span>
+      <span class="i-carbon-search inline-block" />
     </p>
-
-    <p text-sm opacity-75>
-      <em>intro</em>
-    </p>
-
-    <div>
-      <button
-        btn m="3 t6" text-sm
-        @click="router.back()"
-      >
-        back
-      </button>
+    <div v-if="showsFound" class="grid grid-cols-6 gap-6">
+      <ShowCard
+        v-for="show in result"
+        :id="show.id"
+        :key="show.id"
+        :image="show.image?.medium"
+        :name="show.name"
+        :summary="show.summary"
+        :rating="show.rating"
+      />
     </div>
+    <p v-if="!showsFound">No Items found!</p>
   </div>
 </template>
