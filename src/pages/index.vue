@@ -1,18 +1,18 @@
 <script setup lang="ts">
 import Heading from "~/components/Heading/Heading.vue"
-import { getShows } from "~/services/tv-maze"
+import { useGetShows } from "~/services/tv-maze"
 import type { Show } from "~/types"
 
 useHead({
   title: "Home Page",
 })
 
-const { result: data } = getShows()
+const { data: shows } = useGetShows()
 
-const filtersShow = computed(() => {
+const showsSortedByGenre = computed(() => {
   const showMapping: Record<string, Show[]> = {}
-  if (data.value) {
-    for (const show of data.value) {
+  if (shows.value) {
+    for (const show of shows.value) {
       for (const genre of show.genres) {
         if (!showMapping[genre]) showMapping[genre] = []
 
@@ -22,29 +22,31 @@ const filtersShow = computed(() => {
   }
   return showMapping
 })
-const sortShow = (shows?: Show[]) =>
+const sortShowByWeight = (shows?: Show[]) =>
   shows ? shows.sort((a, b) => b.weight - a.weight) : []
 </script>
 
 <template>
-  <div class="explore-highlighted">
-    <Container>
-      <Heading h1>Highlighted shows</Heading>
-      <ShowSlider :shows="sortShow(data)" />
-    </Container>
-  </div>
-  <div class="explore-genres bg-gray-900 py-10">
-    <Container>
-      <Heading h2>Explore TV shows by genres</Heading>
-      <div v-for="(shows, genre) in filtersShow" :key="genre">
-        <Heading h3>{{ genre }}</Heading>
-        <ShowSlider :shows="sortShow(shows)" />
-      </div>
-    </Container>
-  </div>
+  <main class="homepage py-10">
+    <div class="explore-highlighted">
+      <Container>
+        <Heading h1>Highlighted shows</Heading>
+        <ShowSlider :shows="sortShowByWeight(shows)" />
+      </Container>
+    </div>
+    <div class="explore-genres bg-gray-900 py-10">
+      <Container>
+        <Heading h2>Explore TV shows by genres</Heading>
+        <div v-for="(sortedShows, genre) in showsSortedByGenre" :key="genre">
+          <Heading h3>{{ genre }}</Heading>
+          <ShowSlider :shows="sortShowByWeight(sortedShows)" />
+        </div>
+      </Container>
+    </div>
+  </main>
 </template>
 
 <route lang="yaml">
 meta:
-layout: home
+  layout: home
 </route>

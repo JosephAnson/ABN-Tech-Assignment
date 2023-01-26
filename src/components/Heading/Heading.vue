@@ -38,13 +38,13 @@ const type = $computed(() => {
 function getHeaderClass(type: HeadingSizes) {
   switch (type) {
     case "h1":
-      return "text-3xl pb-5"
+      return "text-2xl md:text-3xl mb-5"
     case "h2":
-      return "text-2xl pb-4"
+      return "text-xl  md:text-2xl mb-4"
     case "h3":
-      return "text-xl pb-3"
+      return "text-xl md:text-xl mb-3"
     case "h4":
-      return "text-l pb-2"
+      return "md:text-l mb-2"
   }
 }
 
@@ -57,7 +57,7 @@ const styles = $computed(() => {
 <template>
   <component
     :is="type"
-    class="heading"
+    class="heading font-secondary font-semibold"
     :class="[styles, { 'font-bold': bold }]"
   >
     <slot></slot>

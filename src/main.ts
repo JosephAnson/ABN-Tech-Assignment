@@ -1,6 +1,6 @@
 import { createApp } from "vue"
 import { createHead } from "@vueuse/head"
-import { createRouter, createWebHashHistory } from "vue-router"
+import { createRouter, createWebHistory } from "vue-router"
 import { setupLayouts } from "virtual:generated-layouts"
 import App from "./App.vue"
 import generatedRoutes from "~pages"
@@ -13,7 +13,7 @@ import "swiper/css/bundle"
 const routes = setupLayouts(generatedRoutes)
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
 })
 

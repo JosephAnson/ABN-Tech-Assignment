@@ -4,6 +4,18 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
-  background: #121212;
+  background: #020816;
   color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.font-secondary {
+  font-family: "Montserrat", sans-serif;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+  &.swiper-button-disabled{
+    display: none;
+  }
 }

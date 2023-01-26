@@ -1,46 +1,30 @@
-import type { AxiosResponse } from "axios"
-import axios from "axios"
-import { useAxios } from "@vueuse/integrations/useAxios"
-import type { SearchItem, Show } from "~/types.js"
+import type { Ref } from "vue"
+import type { SearchItem, Show, ShowWithEmbedded } from "~/types.js"
 
-const instance = axios.create({
-  baseURL: "https://api.tvmaze.com/",
-})
+export function useFindShow(name: Ref<string>) {
+  const url = computed(
+    () => `https://api.tvmaze.com/search/shows?q=${name.value}`
+  )
 
-export function useFindShow(title, { immediate }: { immediate: boolean }) {
-  const result = ref<Show[]>([])
-
-  function search(tit: string) {
-    instance
-      .get<SearchItem[], AxiosResponse<SearchItem[]>>(`/search/shows?q=${tit}`)
-      .then((response) => {
-        result.value = response.data.map((item) => item.show)
-      })
-  }
-
-  if (immediate) {
-    search(title)
-  }
-
-  return {
-    result,
-    search,
-  }
-}
-
-export function getShows() {
-  const result = ref<Show[]>([])
-
-  instance.get<Show[], AxiosResponse<Show[]>>(`/shows`, {}).then((response) => {
-    result.value = response.data
+  return useFetch<SearchItem[]>(url, {
+    refetch: true,
+    afterFetch(ctx) {
+      ctx.data = ctx.data.map((item: SearchItem) => item.show)
+      return ctx
+    },
   })
-
-  return {
-    result,
-  }
+    .get()
+    .json<Show[]>()
 }
 
-export async function getShow(id: number | string) {
-  const { data } = await useAxios<Show[]>(`/shows/${id}`, {}, instance)
-  return data.value || []
+export function useGetShows() {
+  return useFetch(`https://api.tvmaze.com/shows`).get().json<Show[]>()
+}
+
+export function useGetShow(id: number | string) {
+  return useFetch(
+    `https://api.tvmaze.com/shows/${id}?embed[]=images&embed[]=cast&embed[]=episodes`
+  )
+    .get()
+    .json<ShowWithEmbedded>()
 }

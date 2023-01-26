@@ -14,19 +14,28 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="bg-gray-800 rounded overflow-hidden h-full">
-    <router-link :to="`/title/${props.id}`">
-      <div class="image-container aspect-[42/59]">
+  <div
+    class="h-full rounded-xl overflow-hidden group bg-primary-500 hover:bg-primary-400 transition-250"
+  >
+    <router-link :to="`/title/${props.id}`" class="h-full">
+      <div class="image-container aspect-[42/59] relative overflow-hidden">
         <img
           v-if="image"
-          class="w-full object-cover h-full"
+          class="w-full h-full group-hover:scale-102 transition-250"
           :src="image"
           :alt="name"
         />
         <div v-if="!image" class="w-full bg-gray h-full flex" />
+        <span
+          class="overlay bg-gradient-to-t from-primary-900 via-transparent"
+        ></span>
+        <Rating
+          v-if="rating && rating.average"
+          class="position-absolute bottom-2 left-2"
+          >{{ rating.average }}</Rating
+        >
       </div>
-      <div class="p-2">
-        <Rating v-if="rating && rating.average">{{ rating.average }}</Rating>
+      <div class="p-2 pointer-events-none">
         <Heading h4 bold class="truncate">
           {{ props.name }}
         </Heading>
