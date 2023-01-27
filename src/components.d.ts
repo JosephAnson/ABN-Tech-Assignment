@@ -8,17 +8,24 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Button: typeof import('./components/Button/Button.vue')['default']
+    Cast: typeof import('./components/Cast/Cast.vue')['default']
     Container: typeof import('./components/Container/Container.vue')['default']
+    Episodes: typeof import('./components/Episodes/Episodes.vue')['default']
     Footer: typeof import('./components/Footer/Footer.vue')['default']
+    Grid: typeof import('./components/Grid/Grid.vue')['default']
     Header: typeof import('./components/Header/Header.vue')['default']
     Heading: typeof import('./components/Heading/Heading.vue')['default']
     Input: typeof import('./components/Input/Input.vue')['default']
+    Posters: typeof import('./components/Posters/Posters.vue')['default']
     Rating: typeof import('./components/Rating/Rating.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Search: typeof import('./components/Search/Search.vue')['default']
     ShowCard: typeof import('./components/ShowCard/ShowCard.vue')['default']
+    ShowCast: typeof import('./components/Cast/ShowCast.vue')['default']
+    ShowInformation: typeof import('./components/ShowInformation/ShowInformation.vue')['default']
     ShowSlider: typeof import('./components/ShowSlider/ShowSlider.vue')['default']
     Tag: typeof import('./components/Tag/Tag.vue')['default']
+    TitleInformation: typeof import('./components/ShowInformation/TitleInformation.vue')['default']
   }
 }

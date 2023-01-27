@@ -40,9 +40,9 @@ const breakpoints = {
       >
         <ShowCard
           :id="tvShow.id"
-          :image="tvShow.image.medium"
+          :image="tvShow.image?.medium"
           :name="tvShow.name"
-          :summary="tvShow.summary"
+          :summary="tvShow?.summary"
           :rating="tvShow.rating"
         />
       </SwiperSlide>

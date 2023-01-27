@@ -1,0 +1,7 @@
+<template>
+  <div
+    class="grid grid-cols-2 gap-6 sm:grid-cols-4 sm:gap-6 lg:grid-cols-6 lg:gap-6"
+  >
+    <slot></slot>
+  </div>
+</template>

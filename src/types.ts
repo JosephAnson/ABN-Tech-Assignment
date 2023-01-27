@@ -2,14 +2,14 @@ export interface Show {
   id: number
   name: string
   url: string
-  summary: string
+  summary?: string
   genres: string[]
   weight: number
   image?: Image
   status: "Running"
-  premiered: string
+  premiered?: string
   runtime: number
-  averageRuntime: number
+  averageRuntime?: number
   schedule: {
     time: string
     days: string[]

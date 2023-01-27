@@ -20,21 +20,22 @@ const showsFound = $computed<number>(() => result.value?.length || 0)
       </Heading>
       <div v-if="showsFound">
         <Heading h2>Titles</Heading>
-        <div
-          class="grid grid-cols-2 gap-6 sm:grid-cols-4 sm:gap-6 lg:grid-cols-6 lg:gap-6"
-        >
+        <Grid>
           <ShowCard
             v-for="show in result"
             :id="show.id"
             :key="show.id"
             :image="show.image?.medium"
             :name="show.name"
-            :summary="show.summary"
+            :summary="show?.summary"
             :rating="show.rating"
           />
-        </div>
+        </Grid>
       </div>
-      <p v-if="!showsFound">No Items found!</p>
+      <div v-if="!showsFound" class="pt-10">
+        <Heading h2>No Items found!</Heading>
+        <router-link to="/"><Button>Go Home</Button></router-link>
+      </div>
     </Container>
   </main>
 </template>

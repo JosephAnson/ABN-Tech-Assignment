@@ -20,16 +20,15 @@ const newValue = useVModel(props, "value", emit)
   >
     <input
       :id="props.id"
-      :value="newValue"
+      v-model="newValue"
       type="text"
       :name="props.name"
       class="bg-transparent w-full px-4 block h-8 focus:ring-indigo-500 focus:border-indigo-500"
       placeholder="Search TV shows"
       autocomplete="off"
-      @input="$emit('update:value', $event.target.value)"
       @focus="$emit('focus')"
       @blur="$emit('blur')"
-      @keydown.enter="$emit('enter', $event.target.value)"
+      @keydown.enter="$emit('enter', newValue)"
     />
     <span
       class="flex w-10 h-8 p-1 cursor-pointer z-10 hover:bg-gray-700 rounded-r-md"

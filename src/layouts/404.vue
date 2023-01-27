@@ -1,15 +1,12 @@
-<script setup lang="ts">
-const router = useRouter()
-</script>
-
 <template>
-  <main>
+  <Header></Header>
+  <main class="py-20 flex flex-col items-center justify-center">
     <div class="text-4xl">
       <div class="i-carbon-warning inline-block" />
     </div>
     <RouterView />
-    <div>
-      <router-link btn text-sm m="3 t8" to="/">Go Back</router-link>
+    <div class="mt-10">
+      <router-link to="/"><Button>Go Home</Button></router-link>
     </div>
   </main>
   <Footer />

@@ -22,7 +22,7 @@ const showsSortedByGenre = computed(() => {
   }
   return showMapping
 })
-const sortShowByWeight = (shows?: Show[]) =>
+const sortShowByWeight = (shows: Show[] | null) =>
   shows ? shows.sort((a, b) => b.weight - a.weight) : []
 </script>
 
