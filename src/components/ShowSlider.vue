@@ -32,6 +32,7 @@ const breakpoints = {
       :slides-per-view="2"
       :space-between="20"
       virtual
+      navigation
       :a11y="{ id }"
       :modules="[Navigation, A11y, Virtual]"
       :breakpoints="breakpoints"
