@@ -2,11 +2,12 @@ export interface Show {
   id: number
   name: string
   url: string
+  officialSite: string
   summary?: string
   genres: string[]
   weight: number
   image?: Image
-  status: "Running"
+  status: "Running" | "Ended"
   premiered?: string
   runtime: number
   averageRuntime?: number
@@ -16,13 +17,14 @@ export interface Show {
   }
   rating: Rating
   network: {
+    id: number
     name: string
     officialSite: string
   }
   externals: {
     tvrage: number
     thetvdb: number
-    imdb: number
+    imdb: string
   }
 }
 
@@ -57,7 +59,7 @@ export interface Cast {
 }
 
 export interface Person {
-  id: string
+  id: number
   name: string
   image?: Image
 }

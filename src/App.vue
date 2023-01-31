@@ -1,13 +1,22 @@
 <script setup lang="ts">
-// https://github.com/vueuse/head
-// you can use this to manipulate the document head in any components,
-// they will be rendered correctly in the html results with vite-ssg
 useHead({
-  title: "Tv Show",
-  meta: [{ name: "description", content: "Tv show" }],
+  title: "ABN Amro TV | Shows Watch Your Favorite TV Shows Online",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Discover the latest and greatest TV shows at ABN Amro TV Shows. Browse our vast selection, watch online, and stay up-to-date with the latest episodes and releases.",
+    },
+    {
+      name: "keywords",
+      content: "TV shows, latest episodes, popular series, ABN Amro TV Shows",
+    },
+  ],
 })
 </script>
 
 <template>
+  <Header />
   <RouterView />
+  <Footer />
 </template>

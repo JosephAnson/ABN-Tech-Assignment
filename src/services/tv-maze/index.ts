@@ -1,5 +1,5 @@
 import type { Ref } from "vue"
-import type { SearchItem, Show, ShowWithEmbedded } from "~/types.js"
+import type { SearchItem, Show, ShowWithEmbedded } from "~/types"
 
 export function useFindShow(name: Ref<string>) {
   const url = computed(
