@@ -1,0 +1,44 @@
+// Vitest Snapshot v1
+
+exports[`Episodes > should not render episodes 1`] = `"<!--v-if-->"`;
+
+exports[`Episodes > should render episodes 1`] = `
+"<section class=\\"episodes mb-10\\">
+  <div class=\\"container max-lg:max-w-full\\">
+    <h3 class=\\"heading font-secondary font-semibold text-xl md:text-xl mb-3\\" h3=\\"\\">Episodes</h3>
+    <div class=\\"episode md:flex mb-8\\">
+      <div class=\\"episode__image aspect-square w-full md:max-w-xs mr-8 mb-4 md:mb-0\\"><img alt=\\"Poster Artwork\\" src=\\"https://static.tvmaze.com/uploads/images/original_untouched/1/4388.jpg\\" class=\\"w-full h-full object-cover\\"></div>
+      <div class=\\"episode__info\\">
+        <h4 class=\\"heading font-secondary font-semibold md:text-l mb-2\\">Pilot</h4>
+        <div class=\\"flex items-center mb-1 last:mb-0 color-gray-300\\"><span class=\\"i-carbon-star-filled color-yellow mr-1\\"></span><span>7.1</span></div>
+        <div class=\\"episode__info__details flex color-gray-300\\"><span>1h</span><span class=\\"seperator mx-2\\">•</span><span>Season 1 - Episode 1</span><span class=\\"seperator mx-2\\">•</span><span>2013</span></div>
+        <p class=\\"prose prose-xl\\">
+        <p>When the residents of Chester's Mill find themselves trapped under a massive transparent dome with no way out, they struggle to survive as resources rapidly dwindle and panic quickly escalates.</p>
+        </p>
+      </div>
+    </div>
+    <div class=\\"episode md:flex mb-8\\">
+      <div class=\\"episode__image aspect-square w-full md:max-w-xs mr-8 mb-4 md:mb-0\\"><img alt=\\"Poster Artwork\\" src=\\"https://static.tvmaze.com/uploads/images/original_untouched/1/4389.jpg\\" class=\\"w-full h-full object-cover\\"></div>
+      <div class=\\"episode__info\\">
+        <h4 class=\\"heading font-secondary font-semibold md:text-l mb-2\\">The Fire</h4>
+        <div class=\\"flex items-center mb-1 last:mb-0 color-gray-300\\"><span class=\\"i-carbon-star-filled color-yellow mr-1\\"></span><span>6.7</span></div>
+        <div class=\\"episode__info__details flex color-gray-300\\"><span>1h</span><span class=\\"seperator mx-2\\">•</span><span>Season 1 - Episode 2</span><span class=\\"seperator mx-2\\">•</span><span>2013</span></div>
+        <p class=\\"prose prose-xl\\">
+        <p>While the residents of Chester's Mill face the uncertainty of life in the dome, panic is heightened when a house goes up in flames and their fire department is outside of the dome.</p>
+        </p>
+      </div>
+    </div>
+    <div class=\\"episode md:flex mb-8\\">
+      <div class=\\"episode__image aspect-square w-full md:max-w-xs mr-8 mb-4 md:mb-0\\"><img alt=\\"Poster Artwork\\" src=\\"https://static.tvmaze.com/uploads/images/original_untouched/1/4390.jpg\\" class=\\"w-full h-full object-cover\\"></div>
+      <div class=\\"episode__info\\">
+        <h4 class=\\"heading font-secondary font-semibold md:text-l mb-2\\">Manhunt</h4>
+        <div class=\\"flex items-center mb-1 last:mb-0 color-gray-300\\"><span class=\\"i-carbon-star-filled color-yellow mr-1\\"></span><span>6.6</span></div>
+        <div class=\\"episode__info__details flex color-gray-300\\"><span>1h</span><span class=\\"seperator mx-2\\">•</span><span>Season 1 - Episode 3</span><span class=\\"seperator mx-2\\">•</span><span>2013</span></div>
+        <p class=\\"prose prose-xl\\">
+        <p>When a former deputy goes rogue, Big Jim recruits Barbie to join the manhunt to keep the town safe. Meanwhile, Junior is determined to escape the dome by going underground.</p>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>"
+`;

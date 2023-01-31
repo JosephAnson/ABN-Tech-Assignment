@@ -1,0 +1,25 @@
+// Vitest Snapshot v1
+
+exports[`Cast > should not render cast 1`] = `"<!--v-if-->"`;
+
+exports[`Cast > should render cast 1`] = `
+"<section class=\\"cast mb-4\\">
+  <div class=\\"container max-lg:max-w-full\\">
+    <h3 class=\\"heading font-secondary font-semibold text-xl md:text-xl mb-3\\" h3=\\"\\">Cast</h3>
+    <div class=\\"grid grid-cols-2 gap-6 sm:grid-cols-4 sm:gap-6 lg:grid-cols-6 lg:gap-6\\">
+      <div class=\\"cast mb-4 flex flex-col items-center text-center\\"><img alt=\\"Picture of Mike Vogel\\" src=\\"https://static.tvmaze.com/uploads/images/medium_portrait/0/1815.jpg\\" class=\\"rounded-full aspect-square overflow-hidden w-full object-cover mb-2\\">
+        <p>Mike Vogel</p>
+        <p class=\\"color-gray-400\\">Dale \\"Barbie\\" Barbara</p>
+      </div>
+      <div class=\\"cast mb-4 flex flex-col items-center text-center\\"><img alt=\\"Picture of Rachelle Lefevre\\" src=\\"https://static.tvmaze.com/uploads/images/medium_portrait/82/207417.jpg\\" class=\\"rounded-full aspect-square overflow-hidden w-full object-cover mb-2\\">
+        <p>Rachelle Lefevre</p>
+        <p class=\\"color-gray-400\\">Julia Shumway</p>
+      </div>
+      <div class=\\"cast mb-4 flex flex-col items-center text-center\\"><img alt=\\"Picture of Alexander Koch\\" src=\\"https://static.tvmaze.com/uploads/images/medium_portrait/205/513325.jpg\\" class=\\"rounded-full aspect-square overflow-hidden w-full object-cover mb-2\\">
+        <p>Alexander Koch</p>
+        <p class=\\"color-gray-400\\">Junior Rennie</p>
+      </div>
+    </div>
+  </div>
+</section>"
+`;

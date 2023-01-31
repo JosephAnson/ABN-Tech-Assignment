@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { toHoursAndMinutes } from "~/utils/toHoursAndMinutes"
-import type { Episode as IEpisode } from "~/types.js"
+import type { Episode as IEpisode } from "~/types"
 
 const props = defineProps<{
   episodes: IEpisode[]
@@ -8,8 +8,8 @@ const props = defineProps<{
 </script>
 
 <template>
-  <Container>
-    <div class="episodes mb-10">
+  <section v-if="episodes.length" class="episodes mb-10">
+    <Container>
       <Heading h3>Episodes</Heading>
       <div
         v-for="episode in props.episodes"
@@ -42,6 +42,6 @@ const props = defineProps<{
           <p class="prose prose-xl" v-html="episode.summary"></p>
         </div>
       </div>
-    </div>
-  </Container>
+    </Container>
+  </section>
 </template>

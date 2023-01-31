@@ -8,7 +8,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="header relative pt-10 pb-24">
+  <section class="header relative pt-10 pb-24">
     <div
       :style="`background: url('${props.show.image?.original}')`"
       class="overlay !bg-no-repeat !bg-cover"
@@ -50,5 +50,5 @@ const props = defineProps<{
         </Button>
       </div>
     </Container>
-  </div>
+  </section>
 </template>

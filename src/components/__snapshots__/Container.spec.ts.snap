@@ -1,0 +1,3 @@
+// Vitest Snapshot v1
+
+exports[`Container > should render container 1`] = `"<div class=\\"container max-lg:max-w-full\\">Contained Content</div>"`;

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ShowImage as IShowImage } from "~/types.js"
+import type { ShowImage as IShowImage } from "~/types"
 
 const props = defineProps<{
   images: IShowImage[]
@@ -11,7 +11,7 @@ const posters = computed(() =>
 </script>
 
 <template>
-  <div class="posters mb-10">
+  <section class="posters mb-10">
     <Container>
       <Heading h3>Posters</Heading>
 
@@ -30,5 +30,5 @@ const posters = computed(() =>
         </div>
       </Grid>
     </Container>
-  </div>
+  </section>
 </template>

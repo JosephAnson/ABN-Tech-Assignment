@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import Rating from "~/components/Rating/Rating.vue"
+import Rating from "~/components/Rating.vue"
+import { notFoundImage } from "~/utils/constants"
 
 const props = defineProps<{
   id: number
@@ -27,7 +28,7 @@ const props = defineProps<{
         <img
           v-if="!image"
           class="w-full h-full group-hover:scale-102 transition-250 object-cover"
-          src="https://images.unsplash.com/photo-1538131587570-641359811581?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=240&q=20"
+          :src="notFoundImage"
           :alt="`No image for ${props.name}`"
         />
         <span

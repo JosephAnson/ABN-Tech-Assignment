@@ -1,15 +1,17 @@
 <script setup lang="ts">
-import Search from "~/components/Search/Search.vue"
+import Search from "~/components/Search.vue"
 import { getRouterParamsAsString } from "~/utils/getRouterParamsAsString"
 
 const route = useRoute()
 
-const name = $ref(
-  "name" in route.params ? getRouterParamsAsString(route.params.name) : ""
+const name = ref(
+  route && "name" in route.params
+    ? getRouterParamsAsString(route.params.name)
+    : ""
 )
 const router = useRouter()
 
-const search = () => {
+const search = (name: string) => {
   if (name) {
     router.push(`/find/${name}`)
   }
@@ -26,7 +28,7 @@ const search = () => {
           <router-link to="/"> TV SHOW </router-link>
         </div>
         <div class="items-center justify-end flex flex-1">
-          <Search v-model:value="name" @enter="search" />
+          <Search v-model:value="name" @enter="search(name)" />
         </div>
       </div>
     </div>

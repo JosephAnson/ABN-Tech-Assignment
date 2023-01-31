@@ -1,0 +1,22 @@
+// Vitest Snapshot v1
+
+exports[`Posters > should not render posters 1`] = `
+"<section class=\\"posters mb-10\\">
+  <div class=\\"container max-lg:max-w-full\\">
+    <h3 class=\\"heading font-secondary font-semibold text-xl md:text-xl mb-3\\" h3=\\"\\">Posters</h3>
+    <div class=\\"grid grid-cols-2 gap-6 sm:grid-cols-4 sm:gap-6 lg:grid-cols-6 lg:gap-6\\"></div>
+  </div>
+</section>"
+`;
+
+exports[`Posters > should render posters 1`] = `
+"<section class=\\"posters mb-10\\">
+  <div class=\\"container max-lg:max-w-full\\">
+    <h3 class=\\"heading font-secondary font-semibold text-xl md:text-xl mb-3\\" h3=\\"\\">Posters</h3>
+    <div class=\\"grid grid-cols-2 gap-6 sm:grid-cols-4 sm:gap-6 lg:grid-cols-6 lg:gap-6\\">
+      <div class=\\"mr-2 mb-2 last:mr-0 w-full\\"><img alt=\\"Poster Artwork\\" src=\\"https://static.tvmaze.com/uploads/images/medium_portrait/0/1.jpg\\" class=\\"w-full\\"></div>
+      <div class=\\"mr-2 mb-2 last:mr-0 w-full\\"><img alt=\\"Poster Artwork\\" src=\\"https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg\\" class=\\"w-full\\"></div>
+    </div>
+  </div>
+</section>"
+`;

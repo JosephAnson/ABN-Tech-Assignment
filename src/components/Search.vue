@@ -1,17 +1,21 @@
 <script lang="ts" setup>
-import { defineEmits, defineProps, withDefaults } from "vue"
-import { useVModel } from "@vueuse/core"
-import type { InputProps } from "~/components/Search/types"
+interface SelectProps {
+  id?: string
+  name?: string
+  value: string
+}
 
-const props = withDefaults(defineProps<InputProps>(), {
+const props = withDefaults(defineProps<SelectProps>(), {
   id: undefined,
   name: undefined,
   value: "",
 })
 
-const emit = defineEmits(["update:value", "focus", "blur", "enter"])
+const emit = defineEmits(["update:value", "enter"])
 
-const newValue = useVModel(props, "value", emit)
+const newValue = useVModel(props, "value", emit, { passive: true })
+
+const emitEnter = (value: string) => emit("enter", value)
 </script>
 
 <template>
@@ -21,21 +25,19 @@ const newValue = useVModel(props, "value", emit)
     <input
       :id="props.id"
       v-model="newValue"
-      type="text"
+      type="search"
       :name="props.name"
       class="bg-transparent w-full px-4 block h-8 focus:ring-indigo-500 focus:border-indigo-500"
       placeholder="Search TV shows"
       autocomplete="off"
-      @focus="$emit('focus')"
-      @blur="$emit('blur')"
-      @keydown.enter="$emit('enter', newValue)"
+      @keydown.enter="emitEnter(newValue)"
     />
-    <span
+    <button
       class="flex w-10 h-8 p-1 cursor-pointer z-10 hover:bg-gray-700 rounded-r-md"
-      @click="$emit('enter', newValue)"
+      @click="emitEnter(newValue)"
     >
       <span class="i-carbon-search w-full h-full"></span>
       <span class="sr-only">Search Button</span>
-    </span>
+    </button>
   </div>
 </template>

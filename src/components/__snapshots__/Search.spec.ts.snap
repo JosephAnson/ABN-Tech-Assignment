@@ -1,0 +1,5 @@
+// Vitest Snapshot v1
+
+exports[`Search > should render search 1`] = `"<div class=\\"flex items-center relative shadow-sm bg-gray-800 sm:text-sm border-gray-300 rounded-md\\"><input type=\\"search\\" class=\\"bg-transparent w-full px-4 block h-8 focus:ring-indigo-500 focus:border-indigo-500\\" placeholder=\\"Search TV shows\\" autocomplete=\\"off\\"><button class=\\"flex w-10 h-8 p-1 cursor-pointer z-10 hover:bg-gray-700 rounded-r-md\\"><span class=\\"i-carbon-search w-full h-full\\"></span><span class=\\"sr-only\\">Search Button</span></button></div>"`;
+
+exports[`Search > should render search with all props 1`] = `"<div class=\\"flex items-center relative shadow-sm bg-gray-800 sm:text-sm border-gray-300 rounded-md\\"><input id=\\"search-id\\" type=\\"search\\" name=\\"search-id\\" class=\\"bg-transparent w-full px-4 block h-8 focus:ring-indigo-500 focus:border-indigo-500\\" placeholder=\\"Search TV shows\\" autocomplete=\\"off\\"><button class=\\"flex w-10 h-8 p-1 cursor-pointer z-10 hover:bg-gray-700 rounded-r-md\\"><span class=\\"i-carbon-search w-full h-full\\"></span><span class=\\"sr-only\\">Search Button</span></button></div>"`;

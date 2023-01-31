@@ -4,6 +4,7 @@ import { A11y, Navigation, Virtual } from "swiper"
 import type { Show } from "~/types"
 
 const props = defineProps<{
+  id: string
   shows: Show[]
 }>()
 
@@ -26,10 +27,12 @@ const breakpoints = {
 <template>
   <div class="slider pb-10">
     <Swiper
+      id="THISISTHENEWID"
+      wrapper-id="THISISTHENEWID"
       :slides-per-view="2"
       :space-between="20"
-      navigation
       virtual
+      :a11y="{ id }"
       :modules="[Navigation, A11y, Virtual]"
       :breakpoints="breakpoints"
     >

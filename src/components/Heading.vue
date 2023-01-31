@@ -27,7 +27,7 @@ const props = defineProps({
   },
 })
 
-const type = $computed(() => {
+const type = computed(() => {
   if (props.h1) return "h1"
   if (props.h2) return "h2"
   if (props.h4) return "h4"
@@ -40,7 +40,7 @@ function getHeaderClass(type: HeadingSizes) {
     case "h1":
       return "text-2xl md:text-3xl mb-5"
     case "h2":
-      return "text-xl  md:text-2xl mb-4"
+      return "text-xl md:text-2xl mb-4"
     case "h3":
       return "text-xl md:text-xl mb-3"
     case "h4":
@@ -48,8 +48,8 @@ function getHeaderClass(type: HeadingSizes) {
   }
 }
 
-const styles = $computed(() => {
-  if (!props.styled) return getHeaderClass(type)
+const styles = computed(() => {
+  if (!props.styled) return getHeaderClass(type.value)
   return getHeaderClass(props.styled)
 })
 </script>

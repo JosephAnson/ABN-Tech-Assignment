@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import type { Cast as ICast } from "~/types.js"
+import type { Cast as ICast } from "~/types"
+import { notFoundImage } from "~/utils/constants"
 
 const props = defineProps<{
   cast: ICast[]
@@ -18,7 +19,7 @@ const castMembers = computed(() => removeDuplicateCastMembers(props.cast))
 </script>
 
 <template>
-  <div class="cast mb-4">
+  <section v-if="cast.length" class="cast mb-4">
     <Container>
       <Heading h3>Cast</Heading>
       <Grid>
@@ -33,6 +34,12 @@ const castMembers = computed(() => removeDuplicateCastMembers(props.cast))
             :src="item.person.image.medium"
             class="rounded-full aspect-square overflow-hidden w-full object-cover mb-2"
           />
+          <img
+            v-else
+            alt="Picture unavailable"
+            :src="notFoundImage"
+            class="rounded-full aspect-square overflow-hidden w-full object-cover mb-2"
+          />
           <p>{{ item.person.name }}</p>
           <p class="color-gray-400">
             {{ item.character.name }}
@@ -40,5 +47,5 @@ const castMembers = computed(() => removeDuplicateCastMembers(props.cast))
         </div>
       </Grid>
     </Container>
-  </div>
+  </section>
 </template>
