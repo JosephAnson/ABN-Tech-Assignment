@@ -15,17 +15,13 @@ declare module '@vue/runtime-core' {
     Grid: typeof import('./components/Grid.vue')['default']
     Header: typeof import('./components/Header.vue')['default']
     Heading: typeof import('./components/Heading.vue')['default']
-    Input: typeof import('./components/Input/Input.vue')['default']
     Posters: typeof import('./components/Posters.vue')['default']
     Rating: typeof import('./components/Rating.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Search: typeof import('./components/Search.vue')['default']
     ShowCard: typeof import('./components/ShowCard.vue')['default']
-    ShowCast: typeof import('./components/Cast/ShowCast.vue')['default']
     ShowInformation: typeof import('./components/ShowInformation.vue')['default']
     ShowSlider: typeof import('./components/ShowSlider.vue')['default']
-    Tag: typeof import('./components/Tag/Tag.vue')['default']
-    TitleInformation: typeof import('./components/ShowInformation/TitleInformation.vue')['default']
   }
 }
