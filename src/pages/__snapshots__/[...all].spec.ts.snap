@@ -1,0 +1,9 @@
+// Vitest Snapshot v1
+
+exports[`All > should render all page 1`] = `
+"<section class=\\"py-10\\">
+  <div class=\\"container max-lg:max-w-full\\">
+    <div>We didn't find what you were looking for</div>
+  </div>
+</section>"
+`;

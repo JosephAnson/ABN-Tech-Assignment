@@ -1,11 +1,7 @@
 <script setup lang="ts">
-import Heading from "~/components/Heading/Heading.vue"
+import Heading from "~/components/Heading.vue"
 import { useGetShows } from "~/services/tv-maze"
 import type { Show } from "~/types"
-
-useHead({
-  title: "Home Page",
-})
 
 const { data: shows } = useGetShows()
 
@@ -28,25 +24,20 @@ const sortShowByWeight = (shows: Show[] | null) =>
 
 <template>
   <main class="homepage py-10">
-    <div class="explore-highlighted">
+    <section class="explore-highlighted">
       <Container>
         <Heading h1>Highlighted shows</Heading>
-        <ShowSlider :shows="sortShowByWeight(shows)" />
+        <ShowSlider id="highlighted-shows" :shows="sortShowByWeight(shows)" />
       </Container>
-    </div>
-    <div class="explore-genres bg-gray-900 py-10">
+    </section>
+    <section class="explore-genres bg-gray-900 py-10">
       <Container>
         <Heading h2>Explore TV shows by genres</Heading>
         <div v-for="(sortedShows, genre) in showsSortedByGenre" :key="genre">
           <Heading h3>{{ genre }}</Heading>
-          <ShowSlider :shows="sortShowByWeight(sortedShows)" />
+          <ShowSlider :id="genre" :shows="sortShowByWeight(sortedShows)" />
         </div>
       </Container>
-    </div>
+    </section>
   </main>
 </template>
-
-<route lang="yaml">
-meta:
-  layout: home
-</route>

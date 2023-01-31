@@ -1,10 +1,5 @@
-<script setup lang="ts"></script>
-
 <template>
-  <div>We didn't find what you were looking for</div>
+  <section class="py-10">
+    <Container> <div>We didn't find what you were looking for</div> </Container>
+  </section>
 </template>
-
-<route lang="yaml">
-meta:
-  layout: 404
-</route>
