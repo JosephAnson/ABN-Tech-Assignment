@@ -4,8 +4,6 @@ import Vue from "@vitejs/plugin-vue"
 import Components from "unplugin-vue-components/vite"
 import AutoImport from "unplugin-auto-import/vite"
 import Unocss from "unocss/vite"
-import VueMacros from "unplugin-vue-macros/vite"
-import Layouts from "vite-plugin-vue-layouts"
 import Pages from "vite-plugin-pages"
 
 export default defineConfig({
@@ -16,25 +14,14 @@ export default defineConfig({
   },
 
   plugins: [
-    // https://vue-macros.sxzz.moe/
-    VueMacros({
-      plugins: {
-        vue: Vue({
-          include: [/\.vue$/],
-          reactivityTransform: true,
-        }),
-      },
+    // https://github.com/vitejs/vite-plugin-vue/
+    Vue({
+      include: [/\.vue$/],
     }),
 
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
-      imports: [
-        "vue",
-        "vue-router",
-        "vue/macros",
-        "@vueuse/head",
-        "@vueuse/core",
-      ],
+      imports: ["vue", "vue-router", "@vueuse/head", "@vueuse/core"],
       dts: "src/auto-imports.d.ts",
       dirs: ["src/composables"],
       vueTemplate: true,
@@ -53,9 +40,6 @@ export default defineConfig({
       extensions: ["vue"],
     }),
 
-    // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
-    Layouts(),
-
     // https://github.com/antfu/unocss
     // see unocss.config.ts for config
     Unocss(),
@@ -63,10 +47,16 @@ export default defineConfig({
 
   // https://github.com/vitest-dev/vitest
   test: {
-    include: ["test/**/*.test.ts"],
+    include: ["**/*.test.ts", "**/*.spec.ts"],
     environment: "jsdom",
     deps: {
       inline: ["@vue", "@vueuse"],
+    },
+    coverage: {
+      provider: "c8",
+      reporter: ["text", "json", "html"],
+      all: true,
+      exclude: ["**/*.config.ts", "**/*.d.ts", "**/main.ts"],
     },
   },
 })
