@@ -1,16 +1,11 @@
 <script setup lang="ts">
-const route = useRoute()
-
-const name = ref(
-  route && "name" in route.params
-    ? getRouterParamsAsString(route.params.name)
-    : ""
-)
+const name = ref("")
 const router = useRouter()
 
-const search = (name: string) => {
-  if (name) {
-    router.push(`/find/${name}`)
+const search = () => {
+  if (name.value) {
+    router.push(`/find/${name.value}`)
+    name.value = ""
   }
 }
 </script>
@@ -25,7 +20,7 @@ const search = (name: string) => {
           <router-link to="/"> TV SHOW </router-link>
         </div>
         <div class="items-center justify-end flex flex-1">
-          <Search v-model:value="name" @enter="search(name)" />
+          <Search v-model:value="name" @enter="search" />
         </div>
       </div>
     </div>
