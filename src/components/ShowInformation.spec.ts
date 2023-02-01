@@ -18,4 +18,15 @@ describe("ShowInformation", () => {
     })
     expect(html()).toMatchSnapshot()
   })
+
+  test("should render minimum show information", () => {
+    const { html } = createRenderShowInformation({
+      show: {
+        name: shows[0].name,
+        summary: shows[0].summary,
+        externals: shows[0].externals,
+      },
+    })
+    expect(html()).toMatchSnapshot()
+  })
 })

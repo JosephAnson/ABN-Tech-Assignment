@@ -8,20 +8,6 @@ exports[`Index > should render index page 1`] = `
       <div class=\\"slider pb-10\\">
         <div class=\\"swiper swiper-virtual swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress\\" id=\\"THISISTHENEWID\\" wrapper-id=\\"THISISTHENEWID\\">
           <div class=\\"swiper-wrapper\\" style=\\"transition-duration: 0ms; transform: translate3d(NaNpx, 0px, 0px);\\" id=\\"highlighted-shows\\" aria-live=\\"polite\\">
-            <div class=\\"swiper-slide\\" data-swiper-slide-index=\\"1\\" style=\\"left: 0px;\\">
-              <div class=\\"h-full rounded-xl overflow-hidden group bg-primary-500 hover:bg-primary-400 transition-250\\"><a to=\\"/title/1\\" class=\\"h-full\\">
-                  <div class=\\"image-container aspect-[42/59] relative overflow-hidden\\"><img class=\\"w-full h-full group-hover:scale-102 transition-250\\" src=\\"https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg\\" alt=\\"Under the Dome\\">
-                    <!--v-if--><span class=\\"overlay bg-gradient-to-t from-primary-900 via-transparent\\"></span>
-                    <div class=\\"flex items-center mb-1 last:mb-0 color-gray-300 position-absolute bottom-2 left-2\\"><span class=\\"i-carbon-star-filled color-yellow mr-1\\"></span><span>6.5</span></div>
-                  </div>
-                  <div class=\\"p-2 pointer-events-none\\">
-                    <h4 class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Under the Dome</h4>
-                    <div class=\\"text-gray-400 text-xs overflow-hidden text-ellipsis text-clip h-12\\">
-                      <p><b>Under the Dome</b> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>
-                    </div>
-                  </div>
-                </a></div>
-            </div>
             <div class=\\"swiper-slide\\" data-swiper-slide-index=\\"2\\" style=\\"left: 0px;\\">
               <div class=\\"h-full rounded-xl overflow-hidden group bg-primary-500 hover:bg-primary-400 transition-250\\"><a to=\\"/title/2\\" class=\\"h-full\\">
                   <div class=\\"image-container aspect-[42/59] relative overflow-hidden\\"><img class=\\"w-full h-full group-hover:scale-102 transition-250\\" src=\\"https://static.tvmaze.com/uploads/images/medium_portrait/163/407679.jpg\\" alt=\\"Person of Interest\\">
@@ -29,15 +15,30 @@ exports[`Index > should render index page 1`] = `
                     <div class=\\"flex items-center mb-1 last:mb-0 color-gray-300 position-absolute bottom-2 left-2\\"><span class=\\"i-carbon-star-filled color-yellow mr-1\\"></span><span>8.8</span></div>
                   </div>
                   <div class=\\"p-2 pointer-events-none\\">
-                    <h4 class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Person of Interest</h4>
+                    <p class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Person of Interest</p>
                     <div class=\\"text-gray-400 text-xs overflow-hidden text-ellipsis text-clip h-12\\">
                       <p>You are being watched. The government has a secret system, a machine that spies on you every hour of every day. I know because I built it. I designed the Machine to detect acts of terror but it sees everything. Violent crimes involving ordinary people. People like you. Crimes the government considered \\"irrelevant\\". They wouldn't act so I decided I would. But I needed a partner. Someone with the skills to intervene. Hunted by the authorities, we work in secret. You'll never find us. But victim or perpetrator, if your number is up, we'll find you.</p>
                     </div>
                   </div>
                 </a></div>
             </div>
+            <div class=\\"swiper-slide\\" data-swiper-slide-index=\\"1\\" style=\\"left: 0px;\\">
+              <div class=\\"h-full rounded-xl overflow-hidden group bg-primary-500 hover:bg-primary-400 transition-250\\"><a to=\\"/title/1\\" class=\\"h-full\\">
+                  <div class=\\"image-container aspect-[42/59] relative overflow-hidden\\"><img class=\\"w-full h-full group-hover:scale-102 transition-250\\" src=\\"https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg\\" alt=\\"Under the Dome\\">
+                    <!--v-if--><span class=\\"overlay bg-gradient-to-t from-primary-900 via-transparent\\"></span>
+                    <div class=\\"flex items-center mb-1 last:mb-0 color-gray-300 position-absolute bottom-2 left-2\\"><span class=\\"i-carbon-star-filled color-yellow mr-1\\"></span><span>6.5</span></div>
+                  </div>
+                  <div class=\\"p-2 pointer-events-none\\">
+                    <p class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Under the Dome</p>
+                    <div class=\\"text-gray-400 text-xs overflow-hidden text-ellipsis text-clip h-12\\">
+                      <p><b>Under the Dome</b> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>
+                    </div>
+                  </div>
+                </a></div>
+            </div>
           </div>
-          <!---->
+          <div class=\\"swiper-button-prev\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Previous slide\\" aria-controls=\\"highlighted-shows\\" aria-disabled=\\"false\\"></div>
+          <div class=\\"swiper-button-next\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Next slide\\" aria-controls=\\"highlighted-shows\\" aria-disabled=\\"false\\"></div>
           <!---->
           <!----><span class=\\"swiper-notification\\" aria-live=\\"assertive\\" aria-atomic=\\"true\\"></span>
         </div>
@@ -47,98 +48,6 @@ exports[`Index > should render index page 1`] = `
   <section class=\\"explore-genres bg-gray-900 py-10\\">
     <div class=\\"container max-lg:max-w-full\\">
       <h2 class=\\"heading font-secondary font-semibold text-xl md:text-2xl mb-4\\">Explore TV shows by genres</h2>
-      <div>
-        <h3 class=\\"heading font-secondary font-semibold text-xl md:text-xl mb-3\\" h3=\\"\\">Drama</h3>
-        <div class=\\"slider pb-10\\">
-          <div class=\\"swiper swiper-virtual swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress\\" id=\\"THISISTHENEWID\\" wrapper-id=\\"THISISTHENEWID\\">
-            <div class=\\"swiper-wrapper\\" style=\\"transition-duration: 0ms; transform: translate3d(NaNpx, 0px, 0px);\\" id=\\"Drama\\" aria-live=\\"polite\\">
-              <div class=\\"swiper-slide\\" data-swiper-slide-index=\\"1\\" style=\\"left: 0px;\\">
-                <div class=\\"h-full rounded-xl overflow-hidden group bg-primary-500 hover:bg-primary-400 transition-250\\"><a to=\\"/title/1\\" class=\\"h-full\\">
-                    <div class=\\"image-container aspect-[42/59] relative overflow-hidden\\"><img class=\\"w-full h-full group-hover:scale-102 transition-250\\" src=\\"https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg\\" alt=\\"Under the Dome\\">
-                      <!--v-if--><span class=\\"overlay bg-gradient-to-t from-primary-900 via-transparent\\"></span>
-                      <div class=\\"flex items-center mb-1 last:mb-0 color-gray-300 position-absolute bottom-2 left-2\\"><span class=\\"i-carbon-star-filled color-yellow mr-1\\"></span><span>6.5</span></div>
-                    </div>
-                    <div class=\\"p-2 pointer-events-none\\">
-                      <h4 class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Under the Dome</h4>
-                      <div class=\\"text-gray-400 text-xs overflow-hidden text-ellipsis text-clip h-12\\">
-                        <p><b>Under the Dome</b> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>
-                      </div>
-                    </div>
-                  </a></div>
-              </div>
-            </div>
-            <!---->
-            <!---->
-            <!----><span class=\\"swiper-notification\\" aria-live=\\"assertive\\" aria-atomic=\\"true\\"></span>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h3 class=\\"heading font-secondary font-semibold text-xl md:text-xl mb-3\\" h3=\\"\\">Science-Fiction</h3>
-        <div class=\\"slider pb-10\\">
-          <div class=\\"swiper swiper-virtual swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress\\" id=\\"THISISTHENEWID\\" wrapper-id=\\"THISISTHENEWID\\">
-            <div class=\\"swiper-wrapper\\" style=\\"transition-duration: 0ms; transform: translate3d(NaNpx, 0px, 0px);\\" id=\\"Science-Fiction\\" aria-live=\\"polite\\">
-              <div class=\\"swiper-slide\\" data-swiper-slide-index=\\"1\\" style=\\"left: 0px;\\">
-                <div class=\\"h-full rounded-xl overflow-hidden group bg-primary-500 hover:bg-primary-400 transition-250\\"><a to=\\"/title/1\\" class=\\"h-full\\">
-                    <div class=\\"image-container aspect-[42/59] relative overflow-hidden\\"><img class=\\"w-full h-full group-hover:scale-102 transition-250\\" src=\\"https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg\\" alt=\\"Under the Dome\\">
-                      <!--v-if--><span class=\\"overlay bg-gradient-to-t from-primary-900 via-transparent\\"></span>
-                      <div class=\\"flex items-center mb-1 last:mb-0 color-gray-300 position-absolute bottom-2 left-2\\"><span class=\\"i-carbon-star-filled color-yellow mr-1\\"></span><span>6.5</span></div>
-                    </div>
-                    <div class=\\"p-2 pointer-events-none\\">
-                      <h4 class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Under the Dome</h4>
-                      <div class=\\"text-gray-400 text-xs overflow-hidden text-ellipsis text-clip h-12\\">
-                        <p><b>Under the Dome</b> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>
-                      </div>
-                    </div>
-                  </a></div>
-              </div>
-              <div class=\\"swiper-slide\\" data-swiper-slide-index=\\"2\\" style=\\"left: 0px;\\">
-                <div class=\\"h-full rounded-xl overflow-hidden group bg-primary-500 hover:bg-primary-400 transition-250\\"><a to=\\"/title/2\\" class=\\"h-full\\">
-                    <div class=\\"image-container aspect-[42/59] relative overflow-hidden\\"><img class=\\"w-full h-full group-hover:scale-102 transition-250\\" src=\\"https://static.tvmaze.com/uploads/images/medium_portrait/163/407679.jpg\\" alt=\\"Person of Interest\\">
-                      <!--v-if--><span class=\\"overlay bg-gradient-to-t from-primary-900 via-transparent\\"></span>
-                      <div class=\\"flex items-center mb-1 last:mb-0 color-gray-300 position-absolute bottom-2 left-2\\"><span class=\\"i-carbon-star-filled color-yellow mr-1\\"></span><span>8.8</span></div>
-                    </div>
-                    <div class=\\"p-2 pointer-events-none\\">
-                      <h4 class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Person of Interest</h4>
-                      <div class=\\"text-gray-400 text-xs overflow-hidden text-ellipsis text-clip h-12\\">
-                        <p>You are being watched. The government has a secret system, a machine that spies on you every hour of every day. I know because I built it. I designed the Machine to detect acts of terror but it sees everything. Violent crimes involving ordinary people. People like you. Crimes the government considered \\"irrelevant\\". They wouldn't act so I decided I would. But I needed a partner. Someone with the skills to intervene. Hunted by the authorities, we work in secret. You'll never find us. But victim or perpetrator, if your number is up, we'll find you.</p>
-                      </div>
-                    </div>
-                  </a></div>
-              </div>
-            </div>
-            <!---->
-            <!---->
-            <!----><span class=\\"swiper-notification\\" aria-live=\\"assertive\\" aria-atomic=\\"true\\"></span>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h3 class=\\"heading font-secondary font-semibold text-xl md:text-xl mb-3\\" h3=\\"\\">Thriller</h3>
-        <div class=\\"slider pb-10\\">
-          <div class=\\"swiper swiper-virtual swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress\\" id=\\"THISISTHENEWID\\" wrapper-id=\\"THISISTHENEWID\\">
-            <div class=\\"swiper-wrapper\\" style=\\"transition-duration: 0ms; transform: translate3d(NaNpx, 0px, 0px);\\" id=\\"Thriller\\" aria-live=\\"polite\\">
-              <div class=\\"swiper-slide\\" data-swiper-slide-index=\\"1\\" style=\\"left: 0px;\\">
-                <div class=\\"h-full rounded-xl overflow-hidden group bg-primary-500 hover:bg-primary-400 transition-250\\"><a to=\\"/title/1\\" class=\\"h-full\\">
-                    <div class=\\"image-container aspect-[42/59] relative overflow-hidden\\"><img class=\\"w-full h-full group-hover:scale-102 transition-250\\" src=\\"https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg\\" alt=\\"Under the Dome\\">
-                      <!--v-if--><span class=\\"overlay bg-gradient-to-t from-primary-900 via-transparent\\"></span>
-                      <div class=\\"flex items-center mb-1 last:mb-0 color-gray-300 position-absolute bottom-2 left-2\\"><span class=\\"i-carbon-star-filled color-yellow mr-1\\"></span><span>6.5</span></div>
-                    </div>
-                    <div class=\\"p-2 pointer-events-none\\">
-                      <h4 class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Under the Dome</h4>
-                      <div class=\\"text-gray-400 text-xs overflow-hidden text-ellipsis text-clip h-12\\">
-                        <p><b>Under the Dome</b> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>
-                      </div>
-                    </div>
-                  </a></div>
-              </div>
-            </div>
-            <!---->
-            <!---->
-            <!----><span class=\\"swiper-notification\\" aria-live=\\"assertive\\" aria-atomic=\\"true\\"></span>
-          </div>
-        </div>
-      </div>
       <div>
         <h3 class=\\"heading font-secondary font-semibold text-xl md:text-xl mb-3\\" h3=\\"\\">Action</h3>
         <div class=\\"slider pb-10\\">
@@ -151,7 +60,7 @@ exports[`Index > should render index page 1`] = `
                       <div class=\\"flex items-center mb-1 last:mb-0 color-gray-300 position-absolute bottom-2 left-2\\"><span class=\\"i-carbon-star-filled color-yellow mr-1\\"></span><span>8.8</span></div>
                     </div>
                     <div class=\\"p-2 pointer-events-none\\">
-                      <h4 class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Person of Interest</h4>
+                      <p class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Person of Interest</p>
                       <div class=\\"text-gray-400 text-xs overflow-hidden text-ellipsis text-clip h-12\\">
                         <p>You are being watched. The government has a secret system, a machine that spies on you every hour of every day. I know because I built it. I designed the Machine to detect acts of terror but it sees everything. Violent crimes involving ordinary people. People like you. Crimes the government considered \\"irrelevant\\". They wouldn't act so I decided I would. But I needed a partner. Someone with the skills to intervene. Hunted by the authorities, we work in secret. You'll never find us. But victim or perpetrator, if your number is up, we'll find you.</p>
                       </div>
@@ -159,7 +68,8 @@ exports[`Index > should render index page 1`] = `
                   </a></div>
               </div>
             </div>
-            <!---->
+            <div class=\\"swiper-button-prev\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Previous slide\\" aria-controls=\\"Action\\" aria-disabled=\\"false\\"></div>
+            <div class=\\"swiper-button-next\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Next slide\\" aria-controls=\\"Action\\" aria-disabled=\\"false\\"></div>
             <!---->
             <!----><span class=\\"swiper-notification\\" aria-live=\\"assertive\\" aria-atomic=\\"true\\"></span>
           </div>
@@ -177,7 +87,7 @@ exports[`Index > should render index page 1`] = `
                       <div class=\\"flex items-center mb-1 last:mb-0 color-gray-300 position-absolute bottom-2 left-2\\"><span class=\\"i-carbon-star-filled color-yellow mr-1\\"></span><span>8.8</span></div>
                     </div>
                     <div class=\\"p-2 pointer-events-none\\">
-                      <h4 class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Person of Interest</h4>
+                      <p class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Person of Interest</p>
                       <div class=\\"text-gray-400 text-xs overflow-hidden text-ellipsis text-clip h-12\\">
                         <p>You are being watched. The government has a secret system, a machine that spies on you every hour of every day. I know because I built it. I designed the Machine to detect acts of terror but it sees everything. Violent crimes involving ordinary people. People like you. Crimes the government considered \\"irrelevant\\". They wouldn't act so I decided I would. But I needed a partner. Someone with the skills to intervene. Hunted by the authorities, we work in secret. You'll never find us. But victim or perpetrator, if your number is up, we'll find you.</p>
                       </div>
@@ -185,7 +95,103 @@ exports[`Index > should render index page 1`] = `
                   </a></div>
               </div>
             </div>
+            <div class=\\"swiper-button-prev\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Previous slide\\" aria-controls=\\"Crime\\" aria-disabled=\\"false\\"></div>
+            <div class=\\"swiper-button-next\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Next slide\\" aria-controls=\\"Crime\\" aria-disabled=\\"false\\"></div>
             <!---->
+            <!----><span class=\\"swiper-notification\\" aria-live=\\"assertive\\" aria-atomic=\\"true\\"></span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 class=\\"heading font-secondary font-semibold text-xl md:text-xl mb-3\\" h3=\\"\\">Science-Fiction</h3>
+        <div class=\\"slider pb-10\\">
+          <div class=\\"swiper swiper-virtual swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress\\" id=\\"THISISTHENEWID\\" wrapper-id=\\"THISISTHENEWID\\">
+            <div class=\\"swiper-wrapper\\" style=\\"transition-duration: 0ms; transform: translate3d(NaNpx, 0px, 0px);\\" id=\\"Science-Fiction\\" aria-live=\\"polite\\">
+              <div class=\\"swiper-slide\\" data-swiper-slide-index=\\"2\\" style=\\"left: 0px;\\">
+                <div class=\\"h-full rounded-xl overflow-hidden group bg-primary-500 hover:bg-primary-400 transition-250\\"><a to=\\"/title/2\\" class=\\"h-full\\">
+                    <div class=\\"image-container aspect-[42/59] relative overflow-hidden\\"><img class=\\"w-full h-full group-hover:scale-102 transition-250\\" src=\\"https://static.tvmaze.com/uploads/images/medium_portrait/163/407679.jpg\\" alt=\\"Person of Interest\\">
+                      <!--v-if--><span class=\\"overlay bg-gradient-to-t from-primary-900 via-transparent\\"></span>
+                      <div class=\\"flex items-center mb-1 last:mb-0 color-gray-300 position-absolute bottom-2 left-2\\"><span class=\\"i-carbon-star-filled color-yellow mr-1\\"></span><span>8.8</span></div>
+                    </div>
+                    <div class=\\"p-2 pointer-events-none\\">
+                      <p class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Person of Interest</p>
+                      <div class=\\"text-gray-400 text-xs overflow-hidden text-ellipsis text-clip h-12\\">
+                        <p>You are being watched. The government has a secret system, a machine that spies on you every hour of every day. I know because I built it. I designed the Machine to detect acts of terror but it sees everything. Violent crimes involving ordinary people. People like you. Crimes the government considered \\"irrelevant\\". They wouldn't act so I decided I would. But I needed a partner. Someone with the skills to intervene. Hunted by the authorities, we work in secret. You'll never find us. But victim or perpetrator, if your number is up, we'll find you.</p>
+                      </div>
+                    </div>
+                  </a></div>
+              </div>
+              <div class=\\"swiper-slide\\" data-swiper-slide-index=\\"1\\" style=\\"left: 0px;\\">
+                <div class=\\"h-full rounded-xl overflow-hidden group bg-primary-500 hover:bg-primary-400 transition-250\\"><a to=\\"/title/1\\" class=\\"h-full\\">
+                    <div class=\\"image-container aspect-[42/59] relative overflow-hidden\\"><img class=\\"w-full h-full group-hover:scale-102 transition-250\\" src=\\"https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg\\" alt=\\"Under the Dome\\">
+                      <!--v-if--><span class=\\"overlay bg-gradient-to-t from-primary-900 via-transparent\\"></span>
+                      <div class=\\"flex items-center mb-1 last:mb-0 color-gray-300 position-absolute bottom-2 left-2\\"><span class=\\"i-carbon-star-filled color-yellow mr-1\\"></span><span>6.5</span></div>
+                    </div>
+                    <div class=\\"p-2 pointer-events-none\\">
+                      <p class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Under the Dome</p>
+                      <div class=\\"text-gray-400 text-xs overflow-hidden text-ellipsis text-clip h-12\\">
+                        <p><b>Under the Dome</b> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>
+                      </div>
+                    </div>
+                  </a></div>
+              </div>
+            </div>
+            <div class=\\"swiper-button-prev\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Previous slide\\" aria-controls=\\"Science-Fiction\\" aria-disabled=\\"false\\"></div>
+            <div class=\\"swiper-button-next\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Next slide\\" aria-controls=\\"Science-Fiction\\" aria-disabled=\\"false\\"></div>
+            <!---->
+            <!----><span class=\\"swiper-notification\\" aria-live=\\"assertive\\" aria-atomic=\\"true\\"></span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 class=\\"heading font-secondary font-semibold text-xl md:text-xl mb-3\\" h3=\\"\\">Drama</h3>
+        <div class=\\"slider pb-10\\">
+          <div class=\\"swiper swiper-virtual swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress\\" id=\\"THISISTHENEWID\\" wrapper-id=\\"THISISTHENEWID\\">
+            <div class=\\"swiper-wrapper\\" style=\\"transition-duration: 0ms; transform: translate3d(NaNpx, 0px, 0px);\\" id=\\"Drama\\" aria-live=\\"polite\\">
+              <div class=\\"swiper-slide\\" data-swiper-slide-index=\\"1\\" style=\\"left: 0px;\\">
+                <div class=\\"h-full rounded-xl overflow-hidden group bg-primary-500 hover:bg-primary-400 transition-250\\"><a to=\\"/title/1\\" class=\\"h-full\\">
+                    <div class=\\"image-container aspect-[42/59] relative overflow-hidden\\"><img class=\\"w-full h-full group-hover:scale-102 transition-250\\" src=\\"https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg\\" alt=\\"Under the Dome\\">
+                      <!--v-if--><span class=\\"overlay bg-gradient-to-t from-primary-900 via-transparent\\"></span>
+                      <div class=\\"flex items-center mb-1 last:mb-0 color-gray-300 position-absolute bottom-2 left-2\\"><span class=\\"i-carbon-star-filled color-yellow mr-1\\"></span><span>6.5</span></div>
+                    </div>
+                    <div class=\\"p-2 pointer-events-none\\">
+                      <p class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Under the Dome</p>
+                      <div class=\\"text-gray-400 text-xs overflow-hidden text-ellipsis text-clip h-12\\">
+                        <p><b>Under the Dome</b> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>
+                      </div>
+                    </div>
+                  </a></div>
+              </div>
+            </div>
+            <div class=\\"swiper-button-prev\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Previous slide\\" aria-controls=\\"Drama\\" aria-disabled=\\"false\\"></div>
+            <div class=\\"swiper-button-next\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Next slide\\" aria-controls=\\"Drama\\" aria-disabled=\\"false\\"></div>
+            <!---->
+            <!----><span class=\\"swiper-notification\\" aria-live=\\"assertive\\" aria-atomic=\\"true\\"></span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 class=\\"heading font-secondary font-semibold text-xl md:text-xl mb-3\\" h3=\\"\\">Thriller</h3>
+        <div class=\\"slider pb-10\\">
+          <div class=\\"swiper swiper-virtual swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress\\" id=\\"THISISTHENEWID\\" wrapper-id=\\"THISISTHENEWID\\">
+            <div class=\\"swiper-wrapper\\" style=\\"transition-duration: 0ms; transform: translate3d(NaNpx, 0px, 0px);\\" id=\\"Thriller\\" aria-live=\\"polite\\">
+              <div class=\\"swiper-slide\\" data-swiper-slide-index=\\"1\\" style=\\"left: 0px;\\">
+                <div class=\\"h-full rounded-xl overflow-hidden group bg-primary-500 hover:bg-primary-400 transition-250\\"><a to=\\"/title/1\\" class=\\"h-full\\">
+                    <div class=\\"image-container aspect-[42/59] relative overflow-hidden\\"><img class=\\"w-full h-full group-hover:scale-102 transition-250\\" src=\\"https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg\\" alt=\\"Under the Dome\\">
+                      <!--v-if--><span class=\\"overlay bg-gradient-to-t from-primary-900 via-transparent\\"></span>
+                      <div class=\\"flex items-center mb-1 last:mb-0 color-gray-300 position-absolute bottom-2 left-2\\"><span class=\\"i-carbon-star-filled color-yellow mr-1\\"></span><span>6.5</span></div>
+                    </div>
+                    <div class=\\"p-2 pointer-events-none\\">
+                      <p class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Under the Dome</p>
+                      <div class=\\"text-gray-400 text-xs overflow-hidden text-ellipsis text-clip h-12\\">
+                        <p><b>Under the Dome</b> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>
+                      </div>
+                    </div>
+                  </a></div>
+              </div>
+            </div>
+            <div class=\\"swiper-button-prev\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Previous slide\\" aria-controls=\\"Thriller\\" aria-disabled=\\"false\\"></div>
+            <div class=\\"swiper-button-next\\" tabindex=\\"0\\" role=\\"button\\" aria-label=\\"Next slide\\" aria-controls=\\"Thriller\\" aria-disabled=\\"false\\"></div>
             <!---->
             <!----><span class=\\"swiper-notification\\" aria-live=\\"assertive\\" aria-atomic=\\"true\\"></span>
           </div>

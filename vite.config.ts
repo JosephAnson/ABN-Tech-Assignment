@@ -56,7 +56,7 @@ export default defineConfig({
       provider: "c8",
       reporter: ["text", "json", "html"],
       all: true,
-      exclude: ["**/*.config.ts", "**/*.d.ts", "**/main.ts"],
+      exclude: ["**/*.config.ts", "**/*.d.ts", "**/main.ts", "dist"],
     },
   },
 })

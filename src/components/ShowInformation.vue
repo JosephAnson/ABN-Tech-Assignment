@@ -18,7 +18,7 @@ const props = defineProps<{
     <Container class="relative z-1">
       <div class="information w-full">
         <Heading h1>{{ props.show.name }}</Heading>
-        <Rating v-if="props.show.rating.average" class="mb-4 text-xl"
+        <Rating v-if="props.show?.rating?.average" class="mb-4 text-xl"
           >{{ props.show.rating.average }}
         </Rating>
         <div class="flex information__details color-gray-400">
@@ -28,7 +28,9 @@ const props = defineProps<{
           <span v-if="props.show.averageRuntime" class="seperator mx-2"
             >&#x2022;</span
           >
-          <span class="genres">{{ props.show.genres.join(", ") }}</span>
+          <span v-if="props.show.genres" class="genres">{{
+            props.show.genres.join(", ")
+          }}</span>
           <span v-if="props.show.premiered" class="seperator mx-2"
             >&#x2022;</span
           >

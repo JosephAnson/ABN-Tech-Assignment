@@ -19,22 +19,33 @@ describe("Heading", () => {
     expect(html()).toMatchSnapshot()
   })
 
-  const headings = ["h1", "h2", "h3", "h4"]
+  const headings = ["h1", "h2", "h3", "h4", "p"]
   for (const headingTag of headings) {
     for (const styled of headings) {
       test(`Should display heading ${headingTag} styled as ${styled}`, () => {
-        const { html, getByRole } = createRenderHeading(
+        const { html, getByRole, getByText } = createRenderHeading(
           {
             styled,
             h1: headingTag === "h1",
             h2: headingTag === "h2",
             h4: headingTag === "h4",
+            p: headingTag === "p",
           },
           `Heading: ${headingTag}, Styled: ${styled}`
         )
+
+        if (headingTag !== "p") {
+          expect(
+            getByRole("heading", {
+              level: parseInt(headingTag.replace("h", "")),
+            })
+          ).toBeTruthy()
+        }
+
         expect(
-          getByRole("heading", { level: parseInt(headingTag.replace("h", "")) })
-        )
+          getByText(`Heading: ${headingTag}, Styled: ${styled}`)
+        ).toBeTruthy()
+
         expect(html()).toMatchSnapshot()
       })
     }

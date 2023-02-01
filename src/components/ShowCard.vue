@@ -38,7 +38,7 @@ const props = defineProps<{
         >
       </div>
       <div class="p-2 pointer-events-none">
-        <Heading h4 bold class="truncate">
+        <Heading p styled="h4" bold class="truncate">
           {{ props.name }}
         </Heading>
         <div

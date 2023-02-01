@@ -7,7 +7,7 @@ exports[`ShowCard > should render full card image 1`] = `
       <div class=\\"flex items-center mb-1 last:mb-0 color-gray-300 position-absolute bottom-2 left-2\\"><span class=\\"i-carbon-star-filled color-yellow mr-1\\"></span><span>23</span></div>
     </div>
     <div class=\\"p-2 pointer-events-none\\">
-      <h4 class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Under the Dome</h4>
+      <p class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Under the Dome</p>
       <div class=\\"text-gray-400 text-xs overflow-hidden text-ellipsis text-clip h-12\\">Under the Dome is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome.</div>
     </div>
   </a></div>"
@@ -20,7 +20,7 @@ exports[`ShowCard > should render show card 1`] = `
       <!--v-if-->
     </div>
     <div class=\\"p-2 pointer-events-none\\">
-      <h4 class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Under the Dome</h4>
+      <p class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Under the Dome</p>
       <!--v-if-->
     </div>
   </a></div>"
@@ -33,7 +33,7 @@ exports[`ShowCard > should render show card image 1`] = `
       <!--v-if-->
     </div>
     <div class=\\"p-2 pointer-events-none\\">
-      <h4 class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Under the Dome</h4>
+      <p class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Under the Dome</p>
       <!--v-if-->
     </div>
   </a></div>"
@@ -46,7 +46,7 @@ exports[`ShowCard > should render show card image not found 1`] = `
       <!--v-if-->
     </div>
     <div class=\\"p-2 pointer-events-none\\">
-      <h4 class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Under the Dome</h4>
+      <p class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Under the Dome</p>
       <!--v-if-->
     </div>
   </a></div>"
@@ -59,7 +59,7 @@ exports[`ShowCard > should render show card rating 1`] = `
       <div class=\\"flex items-center mb-1 last:mb-0 color-gray-300 position-absolute bottom-2 left-2\\"><span class=\\"i-carbon-star-filled color-yellow mr-1\\"></span><span>23</span></div>
     </div>
     <div class=\\"p-2 pointer-events-none\\">
-      <h4 class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Under the Dome</h4>
+      <p class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Under the Dome</p>
       <!--v-if-->
     </div>
   </a></div>"
@@ -72,7 +72,7 @@ exports[`ShowCard > should render show card summary 1`] = `
       <!--v-if-->
     </div>
     <div class=\\"p-2 pointer-events-none\\">
-      <h4 class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Under the Dome</h4>
+      <p class=\\"heading font-secondary font-semibold md:text-l mb-2 font-bold truncate\\">Under the Dome</p>
       <div class=\\"text-gray-400 text-xs overflow-hidden text-ellipsis text-clip h-12\\">
         <p>Under the Dome is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome.</p>
       </div>

@@ -1,5 +1,27 @@
 // Vitest Snapshot v1
 
+exports[`ShowInformation > should render minimum show information 1`] = `
+"<section class=\\"header relative pt-10 pb-24\\">
+  <div style=\\"background: url(undefined);\\" class=\\"overlay !bg-no-repeat !bg-cover\\"></div>
+  <div class=\\"overlay object-cover bg-gradient-to-t from-primary-900 to-primary-900/40\\"></div>
+  <div class=\\"container max-lg:max-w-full relative z-1\\">
+    <div class=\\"information w-full\\">
+      <h1 class=\\"heading font-secondary font-semibold text-2xl md:text-3xl mb-5\\">Under the Dome</h1>
+      <!--v-if-->
+      <div class=\\"flex information__details color-gray-400\\">
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if--><span class=\\"premiered\\"></span>
+      </div>
+      <article class=\\"prose prose-xl mb-8\\">
+        <p><b>Under the Dome</b> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>
+      </article><a class=\\"rounded-md bg-#F5C519 px-4 py-2 text-base font-semibold leading-7 text-primary-900 shadow-sm hover:bg-#BE9917 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-#BE9917\\" target=\\"_blank\\" rel=\\"noopener\\" href=\\"https://www.imdb.com/title/tt1553656\\"> View more on IMDB </a>
+    </div>
+  </div>
+</section>"
+`;
+
 exports[`ShowInformation > should render show information 1`] = `
 "<section class=\\"header relative pt-10 pb-24\\">
   <div style=\\"background: url(https://static.tvmaze.com/uploads/images/original_untouched/81/202627.jpg);\\" class=\\"overlay !bg-no-repeat !bg-cover\\"></div>

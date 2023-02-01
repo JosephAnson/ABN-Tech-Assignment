@@ -3,7 +3,6 @@ import { describe, expect, test, vi } from "vitest"
 import { useRoute } from "vue-router"
 import Title from "./[id].vue"
 import { shows } from "~/components/__mocks__/showMock"
-import { useGetShow } from "~/services/tv-maze/tv-maze"
 
 vi.mock("~/services/tv-maze")
 vi.mock("vue-router")
