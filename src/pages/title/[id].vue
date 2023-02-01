@@ -3,23 +3,21 @@ const route = useRoute()
 const id = computed(() => getRouterParamsAsString(route.params.id))
 
 const { data: showData } = useGetShow(id.value)
-
-const existsAndHasLength = (items?: any[]) => items && items.length
 </script>
 
 <template>
   <main v-if="showData" class="title pb-10">
     <ShowInformation :show="showData" />
     <Cast
-      v-if="existsAndHasLength(showData?._embedded.cast)"
+      v-if="showData?._embedded.cast?.length"
       :cast="showData?._embedded.cast"
     />
     <Posters
-      v-if="existsAndHasLength(showData?._embedded.images)"
+      v-if="showData?._embedded.images?.length"
       :images="showData?._embedded.images"
     />
     <Episodes
-      v-if="existsAndHasLength(showData?._embedded.episodes)"
+      v-if="showData?._embedded.episodes?.length"
       :episodes="showData?._embedded.episodes"
     />
   </main>

@@ -24,6 +24,12 @@ const props = defineProps<{
             :src="episode.image.original"
             class="w-full h-full object-cover"
           />
+          <img
+            v-else
+            alt="Poster Artwork Missing"
+            :src="NOT_FOUND_IMAGE"
+            class="w-full h-full object-cover"
+          />
         </div>
         <div class="episode__info">
           <Heading h4>{{ episode.name }}</Heading>
