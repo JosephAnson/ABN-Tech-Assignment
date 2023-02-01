@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import Heading from "~/components/Heading.vue"
-import { useGetShows } from "~/services/tv-maze"
 import type { Show } from "~/types"
 
 const { data: shows } = useGetShows()

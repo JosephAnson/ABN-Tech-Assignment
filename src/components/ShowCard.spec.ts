@@ -1,7 +1,7 @@
 import { cleanup, render } from "@testing-library/vue"
 import { afterEach, describe, expect, test } from "vitest"
 import ShowCard from "./ShowCard.vue"
-import { notFoundImage } from "~/utils/constants"
+import { NOT_FOUND_IMAGE } from "~/utils/constants"
 
 function createRenderShowCard(props: any) {
   return render(ShowCard, {
@@ -62,7 +62,7 @@ describe("ShowCard", () => {
       name,
     })
     expect(getByRole("img")).toBeTruthy()
-    expect(getByRole<HTMLImageElement>("img").src).toBe(notFoundImage)
+    expect(getByRole<HTMLImageElement>("img").src).toBe(NOT_FOUND_IMAGE)
     expect(html()).toMatchSnapshot()
   })
 

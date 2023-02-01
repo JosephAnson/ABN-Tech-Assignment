@@ -1,9 +1,4 @@
 <script setup lang="ts">
-import Posters from "~/components/Posters.vue"
-import Episodes from "~/components/Episodes.vue"
-import { useGetShow } from "~/services/tv-maze"
-import { getRouterParamsAsString } from "~/utils/getRouterParamsAsString"
-
 const route = useRoute()
 const id = computed(() => getRouterParamsAsString(route.params.id))
 

@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import Search from "~/components/Search.vue"
-import { getRouterParamsAsString } from "~/utils/getRouterParamsAsString"
-
 const route = useRoute()
 
 const name = ref(

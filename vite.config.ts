@@ -23,7 +23,7 @@ export default defineConfig({
     AutoImport({
       imports: ["vue", "vue-router", "@vueuse/head", "@vueuse/core"],
       dts: "src/auto-imports.d.ts",
-      dirs: ["src/composables"],
+      dirs: ["src/composables", "src/utils", "src/services"],
       vueTemplate: true,
     }),
 

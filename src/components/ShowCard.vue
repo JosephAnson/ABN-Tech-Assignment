@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import Rating from "~/components/Rating.vue"
-import { notFoundImage } from "~/utils/constants"
-
 const props = defineProps<{
   id: number
   name: string
@@ -28,7 +25,7 @@ const props = defineProps<{
         <img
           v-if="!image"
           class="w-full h-full group-hover:scale-102 transition-250 object-cover"
-          :src="notFoundImage"
+          :src="NOT_FOUND_IMAGE"
           :alt="`No image for ${props.name}`"
         />
         <span

@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { useFindShow } from "~/services/tv-maze"
-import { getRouterParamsAsString } from "~/utils/getRouterParamsAsString"
-
 const route = useRoute()
 const name = computed(() => getRouterParamsAsString(route.params.name))
 const { data: result } = useFindShow(name)

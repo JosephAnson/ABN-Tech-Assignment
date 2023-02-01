@@ -2,7 +2,7 @@ import { render } from "@testing-library/vue"
 import { describe, expect, test, vi } from "vitest"
 import Index from "./index.vue"
 import { shows } from "~/components/__mocks__/showMock"
-import { useGetShows } from "~/services/tv-maze"
+import { useGetShows } from "~/services/tv-maze/tv-maze"
 
 vi.mock("~/services/tv-maze")
 

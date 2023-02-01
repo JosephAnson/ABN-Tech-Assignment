@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { toHoursAndMinutes } from "~/utils/toHoursAndMinutes"
 import type { Episode as IEpisode } from "~/types"
 
 const props = defineProps<{

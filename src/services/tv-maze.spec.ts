@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, test, vi } from "vitest"
 import type { ComputedRef } from "vue"
-import { useFindShow, useGetShow, useGetShows } from "./index"
+import { useFindShow, useGetShow, useGetShows } from "./tv-maze"
 import type { SearchItem } from "~/types"
 import { shows } from "~/components/__mocks__/showMock"
 

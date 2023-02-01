@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { Cast as ICast } from "~/types"
-import { notFoundImage } from "~/utils/constants"
 
 const props = defineProps<{
   cast: ICast[]
@@ -37,7 +36,7 @@ const castMembers = computed(() => removeDuplicateCastMembers(props.cast))
           <img
             v-else
             alt="Picture unavailable"
-            :src="notFoundImage"
+            :src="NOT_FOUND_IMAGE"
             class="rounded-full aspect-square overflow-hidden w-full object-cover mb-2"
           />
           <p>{{ item.person.name }}</p>

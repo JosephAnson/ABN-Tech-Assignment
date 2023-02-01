@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { toHoursAndMinutes } from "~/utils/toHoursAndMinutes"
 import type { Show } from "~/types"
 
 const props = defineProps<{
