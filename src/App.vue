@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: "ABN Amro TV | Shows Watch Your Favorite TV Shows Online",
+  title: "ABN Amro TV Shows | Watch Your Favorite TV Shows Online",
   meta: [
     {
       name: "description",
